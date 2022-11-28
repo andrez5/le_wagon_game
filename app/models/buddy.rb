@@ -1,3 +1,3 @@
 class Buddy < ApplicationRecord
-  has_many
+  has_many :scenes
 end
