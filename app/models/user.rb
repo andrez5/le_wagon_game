@@ -5,5 +5,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :pcs
   has_many :scenes
-  validates :nickname, presence: true
 end

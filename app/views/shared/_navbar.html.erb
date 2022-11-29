@@ -17,6 +17,30 @@
           <li class="nav-item">
             <%= link_to "Messages", "#", class: "nav-link" %>
           </li>
+
+          <li class="nav-item dropdown">
+            <%= link_to "Atributos", "#", class: "dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <%# @pcs.each do |pc| %>
+                <%# <%= pc.pc_name, class: "dropdown-item"%>
+                <%# <%= pc.gender, class: "dropdown-item"%>
+                <%# <%= pc.age, class: "dropdown-item"%>
+                <%# <%= pc.charisma, class: "dropdown-item" %>
+                <%# <%= pc.money, class: "dropdown-item" %>
+                <%# <%= pc.front_end, class: "dropdown-item" %>
+                <%# <%= pc.back_end, class: "dropdown-item" %>
+                <%# <%= pc.stamina, class: "dropdown-item" %>
+                <%# <%= pc.luck, class: "dropdown-item" %>
+                <%# <%= pc.lazy, class: "dropdown-item" %>
+                <%# <%= pc.studious, class: "dropdown-item" %>
+                <%# <%= pc.genius, class: "dropdown-item" %>
+                <%# <%= pc.neutral, class: "dropdown-item" %>
+                <%# <%= pc.shy, class: "dropdown-item" %>
+                <%# <%= pc.outgoing, class: "dropdown-item" %> 
+              <%# end %>
+            </div>
+          </li>
+
           <li class="nav-item dropdown">
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
