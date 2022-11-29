@@ -5,7 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-
+Choice.destroy_all
+Buddy.destroy_all
+Scene.destroy_all
+Pc.destroy_all
+User.destroy_all
 puts "começando a seed vai explodir jaja💣"
 
 #user
@@ -21,16 +25,16 @@ dia3 = Scene.create(title: "Dia 3", story: "Você um belo dia se depara com dois
 Scene.create(title: "Dia 4", story: "Você chegou ao final parabais!!!", user: User.first, buddy: buddy)
 
 #create choice
-Choice.create(scene: dia1, action: "direita", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: 1)
-Choice.create(scene: dia1, action: "esquerda", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: 1)
+Choice.create(scene: dia1, action: "direita", charisma: 1, money: 10, front_end: 1, back_end: -1, stamina: 1, luck: 1)
+Choice.create(scene: dia1, action: "esquerda", charisma: -1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: -1)
 
-Choice.create(scene: dia2, action: "direita", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: 1)
-Choice.create(scene: dia2, action: "esquerda", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: 1)
+Choice.create(scene: dia2, action: "direita-cima", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: -1)
+Choice.create(scene: dia2, action: "esquerda-cima", charisma: -1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: 1)
 
-Choice.create(scene: dia3, action: "direita", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: 1)
-Choice.create(scene: dia3, action: "esquerda", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: 1)
+Choice.create(scene: dia3, action: "direita-baixo", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: -1, luck: 1)
+Choice.create(scene: dia3, action: "esquerda-baixo", charisma: 1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: 1)
 
 #create pcs
-Pc.create(pc_name: "Geronimo", gender: "neutro", age: 25, charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10, scene: Scene.first)
+Pc.create(pc_name: "Geronimo", gender: "neutro", age: 25, charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10, scene: Scene.first, user: User.first)
 
 puts "💥BOOOOOOM💥"
