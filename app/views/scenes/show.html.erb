@@ -1,14 +1,20 @@
-<h1><%=@scene.title%></h1>
-<p><%=@scene.story%></p>
-<% if @scene.title == "Dia 4" %>
-<%= link_to "back", scenes_path, class: 'btn btn-primary mb-5' %>
-<%elsif @scene.title == "Dia 1" %>
-<%= link_to "esquerda", scene_choice_path(@scene, Choice.all[1]), class: 'btn btn-dark mb-5' %>
-<%= link_to "direita", scene_choice_path(@scene, Choice.first), class: 'btn btn-dark mb-5' %>
-<%elsif @scene.title == "Dia 2" %>
-<%= link_to "esquerda-cima", scene_choice_path(@scene, Choice.all[2]), class: 'btn btn-dark mb-5' %>
-<%= link_to "direita-cima", scene_choice_path(@scene, Choice.all[3]), class: 'btn btn-dark mb-5' %>
-<%elsif @scene.title == "Dia 3" %>
-<%= link_to "esquerda-baixo", scene_choice_path(@scene, Choice.all[4]), class: 'btn btn-dark mb-5' %>
-<%= link_to "direita-baixo", scene_choice_path(@scene, Choice.all[5]), class: 'btn btn-dark mb-5' %>
-<% end %>
+
+<div class="classroom" style="background-image: url(<%= image_path("scene_background.png") %>)">
+  <div class="container d-flex flex-column justify-content-end align-items-start">
+    <h3 class="solway strokeme"><%=@scene.title%></h3>
+    <p class="story-box w-100 border border-dark"><%=@scene.story%></p>
+    <div class=></div>
+    <% if @scene.title == "Dia 4" %>
+      <%= link_to "back", scenes_path, class: 'btn btn-primary mb-5' %>
+    <%elsif @scene.title == "Dia 1" %>
+      <%= link_to "esquerda", scene_choice_path(@scene, Choice.all[1]), class: 'btn btn-dark mb-3' %>
+      <%= link_to "direita", scene_choice_path(@scene, Choice.first), class: 'btn btn-dark mb-3' %>
+    <%elsif @scene.title == "Dia 2" %>
+      <%= link_to "direita-cima", scene_choice_path(@scene, Choice.all[2]), class: 'btn btn-dark mb-3' %>
+      <%= link_to "esquerda-cima", scene_choice_path(@scene, Choice.all[3]), class: 'btn btn-dark mb-3' %>
+    <%elsif @scene.title == "Dia 3" %>
+      <%= link_to "direita-baixo", scene_choice_path(@scene, Choice.all[4]), class: 'btn btn-dark mb-3' %>
+      <%= link_to "esquerda-baixo", scene_choice_path(@scene, Choice.all[5]), class: 'btn btn-dark mb-3' %>
+    <% end %>
+  </div>
+</div>

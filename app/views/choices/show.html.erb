@@ -1,4 +1,4 @@
-<h1>Choices</h1>
+<h1>Choice</h1>
 
 
 
@@ -7,24 +7,21 @@
 
 
 <% if @choice.action == "direita" %>
-  <%= link_to "next scene", scene_path(Scene.all[1]), class: 'btn btn-primary mb-5' %>
-  <p>Vôce escolheu direta perdeu e ganhou alguns atributos</p>
+    <%= link_to "next scene", scene_path(Scene.all[1]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce escolheu direta perdeu e ganhou alguns atributos</p>
   <% elsif @choice.action == "esquerda"%>
-  <%= link_to "next scene", scene_path(Scene.all[1]), class: 'btn btn-primary mb-5' %>
-  <p>Vôce escolheu esquerda perdeu e ganhou alguns atributos</p>
-  <% elsif @choice.action == "direta-cima"%>
-  <%= link_to "next scene", scene_path(Scene.all[2]), class: 'btn btn-primary mb-5' %>
-  <p>Vôce escolheu direita-cima perdeu e ganhou alguns atributos</p>
+    <%= link_to "next scene", scene_path(Scene.all[1]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce escolheu esquerda perdeu e ganhou alguns atributos</p>
   <% elsif @choice.action == "esquerda-cima"%>
-  <%= link_to "next scene", scene_path(Scene.all[2]), class: 'btn btn-primary mb-5' %>
-  <p>Vôce escolheu esquerda-cima perdeu e ganhou alguns atributos</p>
-  <% elsif @choice.action == "direta-baixo"%>
-  <%= link_to "next scene", scene_path(Scene.all[3]), class: 'btn btn-primary mb-5' %>
-  <p>Vôce escolheu direita-baixo perdeu e ganhou alguns atributos</p>
+    <%= link_to "next scene", scene_path(Scene.all[2]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce escolheu esquerda-cima perdeu e ganhou alguns atributos</p>
+  <% elsif @choice.action == "direita-cima"%>
+    <%= link_to "next scene", scene_path(Scene.all[2]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce escolheu direita-cima perdeu e ganhou alguns atributos</p>
   <% elsif @choice.action == "esquerda-baixo"%>
-  <%= link_to "next scene", scene_path(Scene.all[3]), class: 'btn btn-primary mb-5' %>
-  <p>Vôce escolheu esquerda-baixo perdeu e ganhou alguns atributos</p>
-  <% else %>
-  <%= link_to "Home", "/", class: 'btn btn-primary mb-5' %>
-  <p>Acabou o jogo</p>
+    <%= link_to "next scene", scene_path(Scene.all[3]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce escolheu esquerda-baixo perdeu e ganhou alguns atributos</p>
+  <% elsif @choice.action == "direita-baixo"%>
+    <%= link_to "next scene", scene_path(Scene.all[3]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce escolheu direita-baixo perdeu e ganhou alguns atributos</p>
 <% end %>
