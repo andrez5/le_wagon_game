@@ -1,8 +1,8 @@
 <h1>Choices</h1>
 
 <p>Escolha uma opção:</p>
-<a href="<%= scene_choices_path(@scene) %>">Opção 1</a>
-<a href="<%= scene_choices_path(@scene) %>">Opção 2</a>
+<%= @choice.action %>
+
 
 <li class="dropdown">
   <%= link_to "Atributos", "#", class: "dropdown-toggle", id: "choiceDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
