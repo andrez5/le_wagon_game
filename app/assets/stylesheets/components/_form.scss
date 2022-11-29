@@ -1,0 +1,33 @@
+.form-solway {
+  font-family: 'Solway', serif;
+  font-weight: 700;
+}
+
+.form-solway-input {
+  font-family: 'Solway', serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.bg-new-pc {
+  background-color: #2E9ECE;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  .form-label {
+    width: 35%;
+  }
+}
+
+.btn-pc {
+  background-color: #62D9D9;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 3px solid black;
+  padding: 20px 40px;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: 25%;
+}
