@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   get 'choices/edit'
   get 'choices/update'
   devise_for :users
+  resources :scenes do
+    resources :choices
+  end
+  
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :choices
