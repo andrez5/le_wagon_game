@@ -1,3 +1,7 @@
-<h1><%=@scene.title%></h1>
-<p><%=@scene.story%></p>
-<%= link_to "back", scenes_path, class: 'btn btn-primary mb-5' %>
+<div class="classroom" style="background-image: url(<%= image_path("scene_background.png") %>)">
+  <div class="container d-flex flex-column justify-content-end align-items-start">
+    <h3 class="solway"><%=@scene.title%></h3>
+    <p class="story-box w-100"><%=@scene.story%></p>
+    <%= link_to "back", scenes_path, class: 'btn btn-primary mb-3' %>
+  </div>
+</div>
