@@ -14,7 +14,7 @@ class ScenesController < ApplicationController
 
   def create
     @scene = Scene.new(scene_params)
-    @scene.user = current_user
+    @scene.user = User.first
     @scene.buddy = Buddy.first
     if @scene.save
       redirect_to @scene, notice: "scene was successfully created."

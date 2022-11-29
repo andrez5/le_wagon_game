@@ -25,7 +25,7 @@ class PcsController < ApplicationController
   end
 
   def create
-    @pc = pc.new(pc_params)
+    @pc = Pc.new(pc_params)
     @pc.user = current_user
     @pc.scene = Scene.first
     if @pc.save
