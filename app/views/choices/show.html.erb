@@ -1,2 +1,27 @@
-<h1>Choices#show</h1>
-<p>Find me in app/views/choices/show.html.erb</p>
+<h1>Choice</h1>
+
+
+
+
+
+
+
+<% if @choice.action == "desafia para uma corrida" %>
+    <%= link_to "next scene", scene_path(Scene.all[2]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce aceitou a corrida</p>
+  <% elsif @choice.action == "ignora e muda de assunto"%>
+    <%= link_to "next scene", scene_path(Scene.all[1]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce mudou de assunto</p>
+  <% elsif @choice.action == "Vôce aceita o desafio."%>
+    <%= link_to "next scene", scene_path(Scene.all[2]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce aceitou a corrida</p>
+  <% elsif @choice.action == "decide descansar"%>
+    <%= link_to "next scene", scene_path(Scene.all[3]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce tira um cochilo perdeu a corrida</p>
+  <% elsif @choice.action == "continua correndo"%>
+    <%= link_to "next scene", scene_path(Scene.all[4]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce ganhou a corrida</p>
+  <% elsif @choice.action == "direita-baixo"%>
+    <%= link_to "next scene", scene_path(Scene.all[3]), class: 'btn btn-primary mb-5' %>
+    <p>Vôce escolheu direita-baixo perdeu e ganhou alguns atributos</p>
+<% end %>
