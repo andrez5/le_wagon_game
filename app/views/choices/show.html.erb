@@ -1,29 +1,25 @@
 <div class="html2">
-<h1>Choice</h1>
-
-
-
-
-
-
-
-<% if @choice.action == "desafia para uma corrida" %>
-    <%= link_to "next scene", scene_path(Scene.all[2]), class: 'btn btn-primary mb-5' %>
-    <p>Vôce aceitou a corrida</p>
-  <% elsif @choice.action == "ignora e muda de assunto"%>
-    <%= link_to "next scene", scene_path(Scene.all[1]), class: 'btn btn-primary mb-5' %>
-    <p>Vôce mudou de assunto</p>
-  <% elsif @choice.action == "Vôce aceita o desafio."%>
-    <%= link_to "next scene", scene_path(Scene.all[2]), class: 'btn btn-primary mb-5' %>
-    <p>Vôce aceitou a corrida</p>
-  <% elsif @choice.action == "decide descansar"%>
-    <%= link_to "next scene", scene_path(Scene.all[3]), class: 'btn btn-primary mb-5' %>
-    <p>Vôce tira um cochilo perdeu a corrida</p>
-  <% elsif @choice.action == "continua correndo"%>
-    <%= link_to "next scene", scene_path(Scene.all[4]), class: 'btn btn-primary mb-5' %>
-    <p>Vôce ganhou a corrida</p>
-  <% elsif @choice.action == "direita-baixo"%>
-    <%= link_to "next scene", scene_path(Scene.all[3]), class: 'btn btn-primary mb-5' %>
-    <p>Vôce escolheu direita-baixo perdeu e ganhou alguns atributos</p>
-<% end %>
+  <div class="container d-flex flex-column justify-content-end align-items-start">
+    <% if @choice.action == "desafia para uma corrida" %>
+        <%= link_to "continue", scene_path(Scene.all[2]), class: 'btn btn-light mb-5' %>
+        <h3 class="solway strokeme">Você aceitou a corrida</h3>
+      <% elsif @choice.action == "ignora e muda de assunto"%>
+        <%= link_to "continue", scene_path(Scene.all[1]), class: 'btn btn-light mb-5' %>
+        <h3 class="solway strokeme">Você mudou de assunto</h3>
+      <% elsif @choice.action == "Vôce aceita o desafio."%>
+        <%= link_to "continue", scene_path(Scene.all[2]), class: 'btn btn-light mb-5' %>
+        <h3 class="solway strokeme">Você aceitou a corrida</h3>
+      <% elsif @choice.action == "decide descansar"%>
+        <%# <%= link_to "continue", scene_path(Scene.all[3]), class: 'btn btn-light mb-5' %>
+        <%= link_to "Jogue outra vez", "/", class: 'btn btn-light mb-3' %>
+        <h3 class="solway strokeme">Você tira um cochilo perdeu a corrida</h3>
+      <% elsif @choice.action == "continua correndo"%>
+        <%# <%= link_to "continue", scene_path(Scene.all[4]), class: 'btn btn-light mb-5' %>
+        <%= link_to "Jogue outra vez", "/", class: 'btn btn-light mb-3' %>
+        <h3 class="solway strokeme">Você ganhou a corrida</h3>
+      <% elsif @choice.action == "direita-baixo"%>
+        <%= link_to "continue", scene_path(Scene.all[3]), class: 'btn btn-light mb-5' %>
+        <h3 class="solway strokeme">Você escolheu direita-baixo perdeu e ganhou alguns atributos</h3>
+    <% end %>
+  </div>
 </div>
