@@ -7,7 +7,7 @@
     <div class="story-box w-100 border border-dark"><%=@scene.story%>
       <div class="mt-5">
         <% if @scene.title == "Scene 2" %>
-          <%= link_to "Vôce aceita o desafio.", scene_choice_path(@scene, Choice.all[2]), class: 'btn btn-dark'  %>
+          <%= link_to "Você aceita o desafio.", scene_choice_path(@scene, Choice.all[2]), class: 'btn btn-dark'  %>
         <%elsif @scene.title == "Scene 1" %>
           <%= link_to "Desafia para uma corrida", scene_choice_path(@scene, Choice.all[0]), class: 'btn btn-dark' %>
           <%= link_to "Ignora e muda de assunto", scene_choice_path(@scene, Choice.all[1]), class: 'btn btn-dark' %>
