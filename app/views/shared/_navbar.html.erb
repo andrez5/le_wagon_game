@@ -19,26 +19,18 @@
           </li>
 
           <li class="nav-item dropdown">
-            <%#= link_to "Atributos", "#", class: "dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <%= link_to "Atributos", "#", class: "dropdown-toggle nav-link", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%# @pcs.each do |pc| %>
-                <%# <%= pc.pc_name, class: "dropdown-item"%>
-                <%# <%= pc.gender, class: "dropdown-item"%>
-                <%# <%= pc.age, class: "dropdown-item"%>
-                <%# <%= pc.charisma, class: "dropdown-item" %>
-                <%# <%= pc.money, class: "dropdown-item" %>
-                <%# <%= pc.front_end, class: "dropdown-item" %>
-                <%# <%= pc.back_end, class: "dropdown-item" %>
-                <%# <%= pc.stamina, class: "dropdown-item" %>
-                <%# <%= pc.luck, class: "dropdown-item" %>
-                <%# <%= pc.lazy, class: "dropdown-item" %>
-                <%# <%= pc.studious, class: "dropdown-item" %>
-                <%# <%= pc.genius, class: "dropdown-item" %>
-                <%# <%= pc.neutral, class: "dropdown-item" %>
-                <%# <%= pc.shy, class: "dropdown-item" %>
-                <%# <%= pc.outgoing, class: "dropdown-item" %>
-              <%# end %>
-            </div>
+               <a href="" class="dropdown-item">Nome: <%= current_user.pc.pc_name %></a>
+               <a href="" class="dropdown-item">Genero: <%= current_user.pc.gender %></a>
+               <a href="" class="dropdown-item">Idade: <%= current_user.pc.age %></a>
+               <a href="" class="dropdown-item">Carisma: <%= current_user.pc.charisma %></a>
+               <a href="" class="dropdown-item">Dinheiro: <%= current_user.pc.money%></a>
+               <a href="" class="dropdown-item">Front_end: <%= current_user.pc.front_end%></a>
+               <a href="" class="dropdown-item">Back_end: <%= current_user.pc.back_end%></a>
+               <a href="" class="dropdown-item">Vigor: <%= current_user.pc.stamina%></a>
+               <a href="" class="dropdown-item">Sorte: <%= current_user.pc.luck%></a>
+             </div>
           </li>
 
           <li class="nav-item dropdown">
