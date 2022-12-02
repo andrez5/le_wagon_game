@@ -23,7 +23,7 @@ dia1 = Scene.create(title: "Scene 1", story: "Você estava discutindo com a tart
 dia2 = Scene.create(title: "Scene 2", story: "A tartaruga começa a tirar vantagem e caçoar imitando uma galinha.", user: User.first, buddy: buddy )
 dia3 = Scene.create(title: "Scene 3", story: "Ja no dia da corrida você sai disparado na frente e a tartaruga mal sai do lugar. Está muito fácil.", user: User.first, buddy: buddy )
 dia4 = Scene.create(title: "Scene 4", story: "Descansou demais e acabou caindo no sono. A tartaruga te passou e ganhou a corrida.", user: User.first, buddy: buddy )
-dia5 = Scene.create(title: "Scene 5", story: "Parabéns você ganhou a corrida.", user: User.first, buddy: buddy )
+dia5 = Scene.create(title: "Scene 5", story: "Parabéns, você ganhou a corrida.", user: User.first, buddy: buddy )
 
 
 #create choice
