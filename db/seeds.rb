@@ -21,19 +21,19 @@ buddy = Buddy.create(name: "Felipe", charisma: 10, money: 100, front_end: 10, ba
 #create scenes
 dia1 = Scene.create(title: "Scene 1", story: "Você estava discutindo com a tartaruga para ver quem é mais veloz.", user: User.first, buddy: buddy )
 dia2 = Scene.create(title: "Scene 2", story: "A tartaruga começa a tirar vantagem e caçoar imitando uma galinha.", user: User.first, buddy: buddy )
-dia3 = Scene.create(title: "Scene 3", story: "Ja no dia da corrida voce sai disparado na frente e a tartaruga mal sai do lugar.Esta muito facil.", user: User.first, buddy: buddy )
-dia4 = Scene.create(title: "Scene 4", story: "Descansou demais e acabou caindo no sono a tartaruga te passou e ganhou a corrida.", user: User.first, buddy: buddy )
-dia5 = Scene.create(title: "Scene 5", story: "Parabens você ganhou a corrida.", user: User.first, buddy: buddy )
+dia3 = Scene.create(title: "Scene 3", story: "Ja no dia da corrida você sai disparado na frente e a tartaruga mal sai do lugar. Está muito fácil.", user: User.first, buddy: buddy )
+dia4 = Scene.create(title: "Scene 4", story: "Descansou demais e acabou caindo no sono. A tartaruga te passou e ganhou a corrida.", user: User.first, buddy: buddy )
+dia5 = Scene.create(title: "Scene 5", story: "Parabéns você ganhou a corrida.", user: User.first, buddy: buddy )
 
 
 #create choice
-Choice.create(scene: dia1, next_scene_id: 3, action: "desafia para uma corrida", charisma: 1, money: 10, front_end: 1, back_end: -1, stamina: 1, luck: 1)
-Choice.create(scene: dia1, next_scene_id: 2, action: "ignora e muda de assunto", charisma: -1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: -1)
+Choice.create(scene: dia1, next_scene_id: 3, action: "Desafia para uma corrida", charisma: 1, money: 10, front_end: 1, back_end: -1, stamina: 1, luck: 1)
+Choice.create(scene: dia1, next_scene_id: 2, action: "Ignora e muda de assunto", charisma: -1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: -1)
 
-Choice.create(scene: dia2, next_scene_id: 3, action: "Vôce aceita o desafio.", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: -1)
+Choice.create(scene: dia2, next_scene_id: 3, action: "Você aceita o desafio", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: -1)
 
-Choice.create(scene: dia3, next_scene_id: 4, action: "decide descansar", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: -1, luck: 1)
-Choice.create(scene: dia3, next_scene_id: 5, action: "continua correndo", charisma: 1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: 1)
+Choice.create(scene: dia3, next_scene_id: 4, action: "Decide descansar", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: -1, luck: 1)
+Choice.create(scene: dia3, next_scene_id: 5, action: "Continua correndo", charisma: 1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: 1)
 
 #create pcs
 Pc.create(pc_name: "Geronimo", gender: "neutro", age: 25, charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10, scene: Scene.first, user: User.first)
