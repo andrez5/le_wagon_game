@@ -8,7 +8,7 @@
           <% @scene.choices.each do |choice| %>
             <%= link_to choice.action, scene_path(id: choice.next_scene_id, choice: choice.id), class: 'btn btn-dark' %>
           <% end %>
-            <%= link_to "Jogue novamente", "https://round-earth-society.herokuapp.com/", class: 'btn btn-dark' if @scene.id == 4 || @scene.id == 5 %>
+            <%= link_to "Jogue novamente", root_path, class: 'btn btn-dark' if @scene.id == 30 %>
       </div>
     </div>
   </div>
