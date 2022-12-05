@@ -28,6 +28,9 @@ dia1_parte1 = Scene.create(title: "Cena 1", story: "Bem-vindo, #{@pc.pc_name}! V
   Amanhã você terá seu primeiro dia de aula, prepare-se!", user: current_user) # buddy: buddy)
 dia1_parte2 = Scene.create(title: "Cena 2", story: "Você chegou na sala de aula e não conhece ninguém. Você:", user: current_user) # buddy: buddy)
 dia1_parte3 = Scene.create(title: "Cena 3", story: "O professor está ensinando a fazer o set-up e você não entendeu bulhufas. Você:", user: current_user) # buddy: buddy)
+dia1_parte4 = Scene.create(title: "Cena 4", story: "Você quebrou a cabeça pra fazer sozinho e ainda assim não resolveu o setup.", user: current_user) # buddy: buddy)
+dia1_parte5 = Scene.create(title: "Cena 5", story: "Finalmente chegou a hora do almoço. Você decide:", user: current_user) # buddy: buddy)
+dia1_parte6 = Scene.create(title: "Cena 6", story: "Após muita luta, você consegue deixar o computador pronto para realizar os exercícios. Você decide:", user: current_user) # buddy: buddy)
 
 #create choice
 # Choice.create(scene: dia1, action: "desafia para uma corrida", charisma: 1, money: 10, front_end: 1, back_end: -1, stamina: 1, luck: 1)
@@ -41,12 +44,18 @@ dia1_parte3 = Scene.create(title: "Cena 3", story: "O professor está ensinando 
 # Choice.create(scene: dia4, action: "Perdeu a corrida FIM", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: -1, luck: 1)
 
 # Choice.create(scene: dia5, action: "Ganhou a corrida FIM", charisma: 1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: 1)
-Choice.create(scene: dia1_parte2, action: "puxa assunto com o colega ao lado", charisma: 2, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
-Choice.create(scene: dia1_parte2, action: "fica usando o celular até o início da aula.", charisma: -2, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia1_parte2, next_scene_id: 3, action: "puxa assunto com o colega ao lado", charisma: 2, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia1_parte2, next_scene_id: 3, action: "fica usando o celular até o início da aula", charisma: -2, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
 
-Choice.create(scene: dia1_parte3, action: "Chama o Teacher Assistant pra te ajudar", charisma: 1, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
-Choice.create(scene: dia1_parte3, action: "Tenta resolver sozinho", charisma: -2, money: 0, front_end: 0, back_end: 0, stamina: -2, luck: 0)
+Choice.create(scene: dia1_parte3, next_scene_id: 5, action: "Chama o Teacher Assistant pra te ajudar", charisma: 1, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia1_parte3, next_scene_id: 4, action: "Tenta resolver sozinho", charisma: -2, money: 0, front_end: 0, back_end: 0, stamina: -2, luck: 0)
 
+Choice.create(scene: dia1_parte4, next_scene_id: 5, action: "Pede ajuda ao buddy", charisma: 1, money: 0, front_end: 0, back_end: 0, stamina: 1, luck: 0)
+Choice.create(scene: dia1_parte4, next_scene_id: 6, action: "Tenta fazer sozinho durante o almoço", charisma: -3, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+
+Choice.create(scene: dia1_parte5, next_scene_id: 6, action: "Sair para interagir com os colegas", charisma: 3, money: -5, front_end: 0, back_end: 0, stamina: 1, luck: 0)
+Choice.create(scene: dia1_parte5, next_scene_id: 6, action: "Comer sozinho no terraço", charisma: -3, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia1_parte5, next_scene_id: 6, action: "Almoço pra quê?", charisma: -3, money: 0, front_end: 0, back_end: 0, stamina: -3, luck: 0)
 
 
 #create pcs
