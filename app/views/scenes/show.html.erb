@@ -1,28 +1,9 @@
-<%= render "shared/navbar" %>
-<div class="html2">
+
 <%#<div class="classroom" style="background-image: url(<%= image_path("scene_background.png") %>
 <%# )"> %>
-  <div class="container d-flex flex-column justify-content-end align-items-start">
-    <h3 class="solway strokeme"><%=@scene.title%></h3>
-    <div class="story-box w-100 border border-dark"><%=@scene.story%>
-      <div class="mt-5">
-        <% if @scene.title == "Scene 2" %>
-          <%= link_to "Vôce aceita o desafio.", scene_choice_path(@scene, Choice.all[2]), class: 'btn btn-dark'  %>
-        <%elsif @scene.title == "Scene 1" %>
-          <%= link_to "Desafia para uma corrida", scene_choice_path(@scene, Choice.all[0]), class: 'btn btn-dark' %>
-          <%= link_to "Ignora e muda de assunto", scene_choice_path(@scene, Choice.all[1]), class: 'btn btn-dark' %>
-        <%elsif @scene.title == "Scene 3" %>
-          <%= link_to "Decide descansar", scene_choice_path(@scene, Choice.all[3]), class: 'btn btn-dark' %>
-          <%= link_to "Continua correndo", scene_choice_path(@scene, Choice.all[4]), class: 'btn btn-dark' %>
-        <%elsif @scene.title == "Scene 4" %>
-          <%= link_to "Jogue outra vez", "/", class: 'btn btn-dark mb-3' %>
-          <%#= link_to "Perdeu a corrida FIM", scene_choice_path(@scene, Choice.all[5]), class: 'btn btn-dark mb-3' %>
-        <%elsif @scene.title == "Scene 5" %>
-          <%= link_to "Jogue outra vez", "/", class: 'btn btn-dark mb-3' %>
-          <%#= link_to "Ganhou a corrida FIM", scene_choice_path(@scene, Choice.all[6]), class: 'btn btn-dark mb-3' %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+    <%= turbo_frame_tag "cena" do%>
+
+      <%= render "cena" %>
+
+    <% end %>
+
