@@ -5,7 +5,13 @@
     <div class="first-block">
       <h1 class= "pt-3">Le Wagon Games</h1>
       <p class="texto-secundario">O jogo mais ousado de todos os tempos!</p>
+      <% if current_user.nil? %>
+      <a  href="/pcs/new"><button class=" glow-on-hover btn-left"><strong>COMEÇAR JOGO</strong> </button></a>
+      <% elsif current_user.pc.nil? %>
+      <a  href="/pcs/new"><button class=" glow-on-hover btn-left"><strong>COMEÇAR JOGO</strong> </button></a>
+      <% else %>
       <a  href="/scenes/1"><button class=" glow-on-hover btn-left"><strong>COMEÇAR JOGO</strong> </button></a>
+      <% end %>
     </div>
   </div>
 </div>
