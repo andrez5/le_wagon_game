@@ -9,7 +9,7 @@ export default class extends Controller {
   connect() {
     new Typed(this.element, {
       strings: [this.storyValue],
-      typeSpeed: 30,
+      typeSpeed: 15,
       showCursor: false,
     });
   }
