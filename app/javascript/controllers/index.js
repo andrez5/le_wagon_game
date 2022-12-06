@@ -6,3 +6,9 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import SelectChoiceController from "./select_choice_controller"
+application.register("select-choice", SelectChoiceController)
+
+import TypedController from "./typed_controller"
+application.register("typed", TypedController)
