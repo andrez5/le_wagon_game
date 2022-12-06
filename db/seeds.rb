@@ -12,13 +12,13 @@ Scene.destroy_all
 Pc.destroy_all
 User.destroy_all
 
-#user
+# user
 User.create(email: "teste@teste.com", password: "123123", nickname: "teste")
 
-#create Buddy
+# create Buddy
 buddy = Buddy.create(name: "Felipe", charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10)
 
-#create scenes
+# create scenes
 # dia1 = Scene.create(title: "Scene 1", story: "Você estava discutindo com a tartaruga para ver quem é mais veloz.", user: User.first, buddy: buddy )
 # dia2 = Scene.create(title: "Scene 2", story: "A tartaruga começa a tirar vantagem e caçoar imitando uma galinha.", user: User.first, buddy: buddy )
 # dia3 = Scene.create(title: "Scene 3", story: "Ja no dia da corrida voce sai disparado na frente e a tartaruga mal sai do lugar.Esta muito facil.", user: User.first, buddy: buddy )
@@ -26,7 +26,7 @@ buddy = Buddy.create(name: "Felipe", charisma: 10, money: 100, front_end: 10, ba
 # dia5 = Scene.create(title: "Scene 5", story: "A tartaruga começa a tirar vantagem e caçoar imitando uma galinha.", user: User.first, buddy: buddy )
 
 # dia 1
-dia1_parte1 = Scene.create(title: "Dia 1 - Cena 1", story: "Bem-vindo, nome do jogador! Você decidiu entrar em um bootcamp. Parabéns! Amanhã você terá seu primeiro dia de aula, prepare-se!", user: User.first, buddy: buddy)
+dia1_parte1 = Scene.create(title: "Dia 1 - Cena 1", story: "Bem-vindo, nome do jogador! Você decidiu entrar em um bootcamp. Parabéns! Hoje é o seu primeiro dia de aula, prepare-se!", user: User.first, buddy: buddy)
 dia1_parte2 = Scene.create(title: "Dia 1 - Cena 2", story: "Você chegou na sala de aula e não conhece ninguém. Você...", user: User.first, buddy: buddy)
 dia1_parte3 = Scene.create(title: "Dia 1 - Cena 3", story: "O professor está ensinando a fazer o set-up e você não entendeu bulhufas. Você...", user: User.first, buddy: buddy)
 dia1_parte4 = Scene.create(title: "Dia 1 - Cena 4", story: "Você quebrou a cabeça pra fazer sozinho e ainda assim não resolveu o setup.", user: User.first, buddy: buddy)
@@ -56,17 +56,18 @@ dia4_parte19 = Scene.create(title: "Dia 4 - Cena 4", story: "Chegou a hora da au
 dia5_parte20 = Scene.create(title: "Dia 5 - Cena 1", story: "Bom dia! Seu colega comprou um bolo para dividir com a galera. Você já tomou café da manhã. Você…", user: User.first, buddy: buddy)
 dia5_parte21 = Scene.create(title: "Dia 5 - Cena 2", story: "O tão aguardado Front-End chegou e você percebe que…", user: User.first, buddy: buddy)
 dia5_parte22 = Scene.create(title: "Dia 5 - Cena 3", story: "A marmita da semana acabou e você precisa sair pra almoçar. A galera decide ir em um restaurante, mas você precisa economizar.", user: User.first, buddy: buddy)
+dia5_parte23 = Scene.create(title: "Dia 5 - Cena 4", story: "O dia chega ao fim e todos estão ouriçados para saber o que rola nesse Happy Hour. Você decide…", user: User.first, buddy: buddy)
 
 # dia 6
-dia6_parte23 = Scene.create(title: "Dia 6 - Cena 1", story: "Seu grupo está reunido para focar nos trabalhos pendentes para o projeto final.", user: User.first, buddy: buddy)
-dia6_parte24 = Scene.create(title: "Dia 6 - Cena 2", story: "Houve 'amanhã' e a ressaca chegou com força!", user: User.first, buddy: buddy)
-dia6_parte25 = Scene.create(title: "Dia 6 - Cena 3", story: "Seu amigo só quer saber de assistir aos jogos da Copa do Mundo, enquanto você e o resto trabalham incessantemente. Você…", user: User.first, buddy: buddy)
-dia6_parte26 = Scene.create(title: "Dia 6 - Cena 4", story: "O Brasil ganhou e todo mundo quer festejar no bar. O projeto ainda está pela metade.", user: User.first, buddy: buddy)
+dia6_parte24 = Scene.create(title: "Dia 6 - Cena 1", story: "Seu grupo está reunido para focar nos trabalhos pendentes para o projeto final.", user: User.first, buddy: buddy)
+dia6_parte25 = Scene.create(title: "Dia 6 - Cena 2", story: "Houve 'amanhã' e a ressaca chegou com força!", user: User.first, buddy: buddy)
+dia6_parte26 = Scene.create(title: "Dia 6 - Cena 3", story: "Seu amigo só quer saber de assistir aos jogos da Copa do Mundo, enquanto você e o resto trabalham incessantemente. Você…", user: User.first, buddy: buddy)
+dia6_parte27 = Scene.create(title: "Dia 6 - Cena 4", story: "O Brasil ganhou e todo mundo quer festejar no bar. O projeto ainda está pela metade.", user: User.first, buddy: buddy)
 
 # dia 7
-dia7_parte27 = Scene.create(title: "Dia 7 - Cena 1", story: "O Demo Day chegou e ainda faltam alguns detalhes de Front para ajustar.", user: User.first, buddy: buddy)
-dia7_parte28 = Scene.create(title: "Dia 7 - Cena 2", story: "Chegou a hora de apresentar o seu lindo projeto e ninguém quer participar.", user: User.first, buddy: buddy)
-dia7_parte29 = Scene.create(title: "Dia 7 - Cena 3", story: "Ao final das apresentações todos se despedem e prometem manter contato.", user: User.first, buddy: buddy)
+dia7_parte28 = Scene.create(title: "Dia 7 - Cena 1", story: "O Demo Day chegou e ainda faltam alguns detalhes de Front para ajustar.", user: User.first, buddy: buddy)
+dia7_parte29 = Scene.create(title: "Dia 7 - Cena 2", story: "Chegou a hora de apresentar o seu lindo projeto e ninguém quer participar.", user: User.first, buddy: buddy)
+dia7_parte30 = Scene.create(title: "Dia 7 - Cena 3", story: "Ao final das apresentações todos se despedem e prometem manter contato.", user: User.first, buddy: buddy)
 Scene.create(title: "Dia 7 - Cena 4", story: "Parabéns! Você chegou ao final do Bootcamp e se tornou um programador.", user: User.first, buddy: buddy)
 
 # create choice
@@ -152,8 +153,8 @@ Choice.create(scene: dia4_parte17, next_scene_id: 19, action: "Parte para os exe
 Choice.create(scene: dia4_parte17, next_scene_id: 19, action: "Se dá um descanso e sobe com a galera pra fumar um cigarro de origem duvidosa", charisma: 4, money: 0, front_end: 0, back_end: -2, stamina: -4, luck: 0)
 
 # escolhas parte 18
-Choice.create(scene: dia4_parte18, next_scene_id: 19, action: "Não participa da aula e pega a solução do Kitt no final do dia", charisma: 0, money: 0, front_end: -5, back_end: -5, stamina: 2, luck: 0)
-Choice.create(scene: dia4_parte18, next_scene_id: 19, action: "Participa e pede os tickets online", charisma: 4, money: 0, front_end: 0, back_end: 3, stamina: 3, luck: 0)
+Choice.create(scene: dia4_parte18, next_scene_id: 21, action: "Não participa da aula e pega a solução do Kitt no final do dia", charisma: 0, money: 0, front_end: -5, back_end: -5, stamina: 2, luck: 0)
+Choice.create(scene: dia4_parte18, next_scene_id: 21, action: "Participa e pede os tickets online", charisma: 4, money: 0, front_end: 0, back_end: 3, stamina: 3, luck: 0)
 
 # escolhas parte 19
 Choice.create(scene: dia4_parte19, next_scene_id: 20, action: "Você sobe para 'relaxar' e fazer o seu único exercício semanal", charisma: 4, money: 0, front_end: 0, back_end: 0, stamina: 4, luck: 0)
@@ -169,39 +170,45 @@ Choice.create(scene: dia5_parte21, next_scene_id: 22, action: "prefere Back-End 
 Choice.create(scene: dia5_parte21, next_scene_id: 22, action: "achou massa e fica só no Front-Endless", charisma: -0, money: 0, front_end: 3, back_end: 0, stamina: 0, luck: 0)
 
 # escolhas parte 22
-Choice.create(scene: dia5_parte22, next_scene_id: 23, action: "ir direto pra casa, já que não tem obrigação nenhuma de socializar", charisma: -3, money: 0, front_end: 0, back_end: 0, stamina: 5, luck: 0)
-Choice.create(scene: dia5_parte22, next_scene_id: 23, action: "ficar uns minutinhos e ir pra casa porque precisa estudar no final de semana", charisma: 2, money: 0, front_end: 3, back_end: 0, stamina: 2, luck: 0)
-Choice.create(scene: dia5_parte22, next_scene_id: 24, action: "entornar o 'caneco' como se não houvesse amanhã", charisma: 5, money: -3, front_end: 0, back_end: 0, stamina: -3, luck: 0)
+Choice.create(scene: dia5_parte22, next_scene_id: 23, action: "passa no mercadinho e compra uma lasanha congelada", charisma: -1, money: -1, front_end: 0, back_end: 0, stamina: 1, luck: 0)
+Choice.create(scene: dia5_parte22, next_scene_id: 23, action: "resolve ostentar e divide o PF no cartão de crédito", charisma: 2, money: -4, front_end: 0, back_end: 0, stamina: 2, luck: 0)
 
 # escolhas parte 23
-Choice.create(scene: dia6_parte23, next_scene_id: 25, action: "Você vai encontrar com o pessoal e ajuda a desenvolver o app", charisma: 3, money: 0, front_end: 3, back_end: 3, stamina: -3, luck: 0)
-Choice.create(scene: dia6_parte23, next_scene_id: 25, action: "Dá um migué, passa na padaria e chega só na hora do almoço", charisma: -2, money: -1, front_end: 1, back_end: 1, stamina: -1, luck: 0)
+Choice.create(scene: dia5_parte23, next_scene_id: 24, action: "ir direto pra casa, já que não tem obrigação nenhuma de socializar", charisma: -3, money: 0, front_end: 0, back_end: 0, stamina: 5, luck: 0)
+Choice.create(scene: dia5_parte23, next_scene_id: 24, action: "ficar uns minutinhos e ir pra casa porque precisa estudar no final de semana", charisma: 2, money: 0, front_end: 3, back_end: 0, stamina: 2, luck: 0)
+Choice.create(scene: dia5_parte23, next_scene_id: 25, action: "entornar o 'caneco' como se não houvesse amanhã", charisma: 5, money: -3, front_end: 0, back_end: 0, stamina: -3, luck: 0)
 
 # escolhas parte 24
-Choice.create(scene: dia6_parte24, next_scene_id: 25, action: "Você é um dev guerreiro e se encontra cedo com o grupo pra trabalhar no projeto final", charisma: 3, money: 0, front_end: 3, back_end: 3, stamina: -5, luck: 0)
-Choice.create(scene: dia6_parte24, next_scene_id: 25, action: "Dá um migué, passa na padaria e chega só na hora do almoço", charisma: -2, money: -1, front_end: 1, back_end: 1, stamina: -3, luck: 0)
+Choice.create(scene: dia6_parte24, next_scene_id: 25, action: "Você vai encontrar com o pessoal e ajuda a desenvolver o app", charisma: 3, money: 0, front_end: 3, back_end: 3, stamina: -3, luck: 0)
+Choice.create(scene: dia6_parte24, next_scene_id: 25, action: "Dá um migué, passa na padaria e chega só na hora do almoço", charisma: -2, money: -1, front_end: 1, back_end: 1, stamina: -1, luck: 0)
 
 # escolhas parte 25
-Choice.create(scene: dia6_parte25, next_scene_id: 26, action: "faz a sua parte, afinal, cada um sabe de si", charisma: 3, money: 0, front_end: 3, back_end: 3, stamina: -5, luck: 0)
-Choice.create(scene: dia6_parte25, next_scene_id: 26, action: "para de trabalhar e assiste ao jogo também, já que não é trouxa!", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 2, luck: 0)
+Choice.create(scene: dia6_parte25, next_scene_id: 26, action: "Você é um dev guerreiro e se encontra cedo com o grupo pra trabalhar no projeto final", charisma: 3, money: 0, front_end: 3, back_end: 3, stamina: -5, luck: 0)
+Choice.create(scene: dia6_parte25, next_scene_id: 26, action: "Dá um migué, passa na padaria e chega só na hora do almoço", charisma: -2, money: -1, front_end: 1, back_end: 1, stamina: -3, luck: 0)
 
 # escolhas parte 26
-Choice.create(scene: dia6_parte26, next_scene_id: 27, action: "Como um aluno aplicado, você segue codando", charisma: 3, money: 0, front_end: 3, back_end: 3, stamina: -3, luck: 0)
-Choice.create(scene: dia6_parte26, next_scene_id: 27, action: "Copa é só de 4 em 4 anos. Depois você recupera o prejuízo", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 2, luck: 0)
+Choice.create(scene: dia6_parte26, next_scene_id: 27, action: "faz a sua parte, afinal, cada um sabe de si", charisma: 3, money: 0, front_end: 3, back_end: 3, stamina: -5, luck: 0)
+Choice.create(scene: dia6_parte26, next_scene_id: 27, action: "para de trabalhar e assiste ao jogo também, já que não é trouxa!", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 2, luck: 0)
 
 # escolhas parte 27
-Choice.create(scene: dia7_parte27, next_scene_id: 28, action: "Pede um ticket ao TA e reza pra dar tempo de subir pro Heroku", charisma: 0, money: 0, front_end: 3, back_end: 0, stamina: -3, luck: 0)
-Choice.create(scene: dia7_parte27, next_scene_id: 28, action: "Já está muito em cima da hora. Deixa como está seja o que Deus quiser", charisma: 0, money: 0, front_end: -4, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia6_parte27, next_scene_id: 28, action: "Como um aluno aplicado, você segue codando", charisma: 3, money: 0, front_end: 3, back_end: 3, stamina: -3, luck: 0)
+Choice.create(scene: dia6_parte27, next_scene_id: 28, action: "Copa é só de 4 em 4 anos. Depois você recupera o prejuízo", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 2, luck: 0)
 
 # escolhas parte 28
-Choice.create(scene: dia7_parte28, next_scene_id: 29, action: "Você faz sozinho como um bom otário", charisma: 2, money: 0, front_end: 3, back_end: 3, stamina: 0, luck: 0)
-Choice.create(scene: dia7_parte28, next_scene_id: 29, action: "Tira no sorteio quem vai ser o 'felizardo'", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia7_parte28, next_scene_id: 29, action: "Pede um ticket ao TA e reza pra dar tempo de subir pro Heroku", charisma: 0, money: 0, front_end: 3, back_end: 0, stamina: -3, luck: 0)
+Choice.create(scene: dia7_parte28, next_scene_id: 29, action: "Já está muito em cima da hora. Deixa como está seja o que Deus quiser", charisma: 0, money: 0, front_end: -4, back_end: 0, stamina: 0, luck: 0)
 
 # escolhas parte 29
-Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Você se emociona com o fim e já marca com um grupo para continuar codando", charisma: 2, money: 0, front_end: 4, back_end: 4, stamina: 0, luck: 0)
-Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Você sabe que na real não vai ser assim, mas concorda e internamente declina", charisma: 2, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Você faz sozinho como um bom otário", charisma: 2, money: 0, front_end: 3, back_end: 3, stamina: 0, luck: 0)
+Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Tira no sorteio quem vai ser o 'felizardo'", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+
+# escolhas parte 30
+Choice.create(scene: dia7_parte30, next_scene_id: 31, action: "Você se emociona com o fim e já marca com um grupo para continuar codando", charisma: 2, money: 0, front_end: 4, back_end: 4, stamina: 0, luck: 0)
+Choice.create(scene: dia7_parte30, next_scene_id: 31, action: "Você sabe que na real não vai ser assim, mas concorda e internamente declina", charisma: 2, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
 
 # create pcs
 Pc.create(pc_name: "Geronimo", gender: "neutro", age: 25, charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10, scene: Scene.first, user: User.first)
+
+# create npcs
 
 puts "💥BOOOOOOM💥"
