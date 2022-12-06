@@ -1,17 +1,20 @@
-     <%= turbo_frame_tag "cena" do%>
-     <%= render "shared/navbar" %>
-<div class="html2">
+<%= turbo_frame_tag "cena" do%>
+  <%= render "shared/navbar" %>
+  <div class="html2">
      <div class="container d-flex flex-column justify-content-end align-items-start" >
+     <%#<div class="classroom" style="background-image: url(<%= image_path("scene_background.png") %>
+<%# )"> %>
 <h3 class="solway strokeme"><%=@scene.title%></h3>
-    <div class="story-box w-100 border border-dark"><%=@scene.story%>
-      <div class="mt-5">
+    <div class="story-box w-100 border border-dark type" >
+      <div data-controller="typed" data-typed-story-value="<%=@scene.story%>"></div>
+        <div class="mt-4" data-controller="select-choice">
           <% @scene.choices.each do |choice| %>
-            <%= link_to choice.action, scene_path(id: choice.next_scene_id, choice: choice.id), class: 'btn btn-dark' %>
+            <%= link_to choice.action, scene_path(id: choice.next_scene_id, choice: choice.id),class: "text-decoration-none d-flex justify-content-center"%>
           <% end %>
-            <%= link_to "Jogue novamente", "https://round-earth-society.herokuapp.com/", class: 'btn btn-dark' if @scene.id == 4 || @scene.id == 5 %>
-      </div>
+            <%= link_to "Jogue novamente", root_path, class: 'btn btn-dark' if @scene.id == 4 || @scene.id == 5 %>
+        </div>
     </div>
   </div>
   </div>
 </div>
-    <% end %>
+<% end %>
