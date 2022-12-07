@@ -1,16 +1,14 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-puts "começando a seed vai explodir jaja💣"
+puts "começando a seed vai explodir, já já💣"
+
+############### DESTRUINDO #####################
+
 Choice.destroy_all
 Buddy.destroy_all
 Scene.destroy_all
 Pc.destroy_all
 User.destroy_all
+
+############### USUARIO #####################
 
 # user
 User.create(email: "teste@teste.com", password: "123123", nickname: "teste")
@@ -18,12 +16,7 @@ User.create(email: "teste@teste.com", password: "123123", nickname: "teste")
 # create Buddy
 buddy = Buddy.create(name: "Felipe", charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10)
 
-# create scenes
-# dia1 = Scene.create(title: "Scene 1", story: "Você estava discutindo com a tartaruga para ver quem é mais veloz.", user: User.first, buddy: buddy )
-# dia2 = Scene.create(title: "Scene 2", story: "A tartaruga começa a tirar vantagem e caçoar imitando uma galinha.", user: User.first, buddy: buddy )
-# dia3 = Scene.create(title: "Scene 3", story: "Ja no dia da corrida voce sai disparado na frente e a tartaruga mal sai do lugar.Esta muito facil.", user: User.first, buddy: buddy )
-# dia4 = Scene.create(title: "Scene 4", story: "Descansou demais e acabou caindo no sono a tartaruga te passou e ganhou a corrida.", user: User.first, buddy: buddy )
-# dia5 = Scene.create(title: "Scene 5", story: "A tartaruga começa a tirar vantagem e caçoar imitando uma galinha.", user: User.first, buddy: buddy )
+############### CENAS #####################
 
 # dia 1
 dia1_parte1 = Scene.create(title: "Dia 1 - Cena 1", story: "Bem-vindo, nome do jogador! Você decidiu entrar em um bootcamp. Parabéns! Hoje é o seu primeiro dia de aula, prepare-se!", user: User.first, buddy: buddy)
@@ -70,18 +63,8 @@ dia7_parte29 = Scene.create(title: "Dia 7 - Cena 2", story: "Chegou a hora de ap
 dia7_parte30 = Scene.create(title: "Dia 7 - Cena 3", story: "Ao final das apresentações todos se despedem e prometem manter contato.", user: User.first, buddy: buddy)
 dia7_final = Scene.create(title: "Dia 7 - Cena 4", story: "Parabéns! Você chegou ao final do Bootcamp e se tornou um programador.", user: User.first, buddy: buddy)
 
-# create choice
-# Choice.create(scene: dia1, action: "desafia para uma corrida", charisma: 1, money: 10, front_end: 1, back_end: -1, stamina: 1, luck: 1)
-# Choice.create(scene: dia1, action: "ignora e muda de assunto", charisma: -1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: -1)
 
-# Choice.create(scene: dia2, action: "Vôce aceita o desafio.", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: 1, luck: -1)
-
-# Choice.create(scene: dia3, action: "decide descansar", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: -1, luck: 1)
-# Choice.create(scene: dia3, action: "continua correndo", charisma: 1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: 1)
-
-# Choice.create(scene: dia4, action: "Perdeu a corrida FIM", charisma: 1, money: 10, front_end: 1, back_end: 1, stamina: -1, luck: 1)
-
-# Choice.create(scene: dia5, action: "Ganhou a corrida FIM", charisma: 1, money: 10, front_end: -1, back_end: 1, stamina: 1, luck: 1)
+############### ESCOLHAS #####################
 
 # escolhas parte 1
 Choice.create(scene: dia1_parte1, next_scene_id: 2, action: "Prossiga", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 0)
@@ -205,8 +188,5 @@ Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Tira no sorteio q
 # escolhas parte 30
 Choice.create(scene: dia7_parte30, next_scene_id: 31, action: "Você se emociona com o fim e já marca com um grupo para continuar codando", charisma: 2, money: 0, front_end: 4, back_end: 4, stamina: 0)
 Choice.create(scene: dia7_parte30, next_scene_id: 31, action: "Você sabe que na real não vai ser assim, mas concorda e internamente declina", charisma: 2, money: 0, front_end: 0, back_end: 0, stamina: 0)
-
-# escolhas parte 31
-# Choice.create(scene: dia7_final, action: "#{@pc.money + @pc.front_end + @pc.back_end + @pc.stamina}" )
 
 puts "💥BOOOOOOM💥"
