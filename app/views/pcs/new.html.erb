@@ -1,17 +1,28 @@
+<<<<<<< HEAD
 
   <div class="bg-new-pc">
+=======
+<div class="background-container">
+  <img class="img-background-login" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds">
+</div>
+
+  <div class="login-box3">
+>>>>>>> master
     <div class="container">
-      <h1 class="form-solway">Criação de personagem</h1>
-      <div class="row justify-content-center">
-        <div class="col-9 mt-5 ">
+      <h1 class=" text-center mb-5"><strong>Criação de personagem<strong></h1>
+      <div class="">
+        <div class="">
           <%= simple_form_for(@pc) do |f| %>
             <%= f.error_notification %>
             <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-              <%= f.input :pc_name, wrapper_html: { class: 'form-solway-input d-flex ' }, label: 'Nome:', error: false %>
-            <%= f.input :gender,collection: Pc::GENDERS, wrapper_html: { class: 'form-solway-input d-flex ' }, label: 'Genero:', error: false %>
-            <%= f.input :age, wrapper_html: { class: 'form-solway-input d-flex ' }, label: 'Idade:', error: false %>
+              <%= f.input :pc_name, wrapper_html: { class: '' }, label: 'Nome:', error: false %>
+            <%= f.input :gender,collection: Pc::GENDERS, wrapper_html: { class: '' }, label: 'Genero:', error: false %>
+            <%= f.input :age, wrapper_html: { class: '' }, label: 'Idade:', error: false %>
             <div class="mt-3 d-flex justify-content-center">
-            <%= f.submit 'Submit', class:"mb-4 btn-pc" %>
+            <%= f.submit 'Criar', class:"mb-4 bn60 mt-5" %>
           <% end %>
         </div>
       </div>
