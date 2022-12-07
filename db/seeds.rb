@@ -46,7 +46,7 @@ dia4_parte18 = Scene.create(title: "Dia 4 - Cena 3", story: "Você não consegue
 dia4_parte19 = Scene.create(title: "Dia 4 - Cena 4", story: "Chegou a hora da aula de yoga!", user: User.first, buddy: buddy)
 
 # dia 5
-dia5_parte20 = Scene.create(title: "Dia 5 - Cena 1", story: "Bom dia! Seu colega comprou um bolo para dividir com a galera. Você já tomou café da manhã. Você…", user: User.first, buddy: buddy, npc_name: "Michel")
+dia5_parte20 = Scene.create(title: "Dia 5 - Cena 1", story: "Bom dia! Seu colega comprou um bolo para dividir com a galera. Você já tomou café da manhã. Você…", user: User.first, buddy: buddy, npc_name: "Rodolfo")
 dia5_parte21 = Scene.create(title: "Dia 5 - Cena 2", story: "O tão aguardado Front-End chegou e você percebe que…", user: User.first, buddy: buddy, npc_name: "Laurinha")
 dia5_parte22 = Scene.create(title: "Dia 5 - Cena 3", story: "A marmita da semana acabou e você precisa sair pra almoçar. A galera decide ir em um restaurante, mas você precisa economizar.", user: User.first, buddy: buddy, npc_name: "Fernanda")
 dia5_parte23 = Scene.create(title: "Dia 5 - Cena 4", story: "O dia chega ao fim e todos estão ouriçados para saber o que rola nesse Happy Hour. Você decide…", user: User.first, buddy: buddy)
