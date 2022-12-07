@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 
   <div class="bg-new-pc">
-=======
 <div class="background-container">
   <img class="img-background-login" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
   <div class="stars"></div>
@@ -10,7 +9,7 @@
 </div>
 
   <div class="login-box3">
->>>>>>> master
+
     <div class="container">
       <h1 class=" text-center mb-5"><strong>Criação de personagem<strong></h1>
       <div class="">
@@ -22,7 +21,7 @@
             <%= f.input :gender,collection: Pc::GENDERS, wrapper_html: { class: '' }, label: 'Genero:', error: false %>
             <%= f.input :age, wrapper_html: { class: '' }, label: 'Idade:', error: false %>
             <div class="mt-3 d-flex justify-content-center">
-            <%= f.submit 'Criar', class:"mb-4 bn60 mt-5" %>
+            <%= f.button :submit,'Criar', class:"mb-4 bn60 mt-5" %>
           <% end %>
         </div>
       </div>
