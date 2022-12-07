@@ -17,11 +17,12 @@
           <%= simple_form_for(@pc) do |f| %>
             <%= f.error_notification %>
             <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-              <%= f.input :pc_name, wrapper_html: { class: '' }, label: 'Nome:', error: false %>
-            <%= f.input :gender,collection: Pc::GENDERS, wrapper_html: { class: '' }, label: 'Genero:', error: false %>
-            <%= f.input :age, wrapper_html: { class: '' }, label: 'Idade:', error: false %>
+              <%= f.input :pc_name, label: 'Nome:', error: false %>
+            <%= f.input :gender,collection: Pc::GENDERS, label: 'Genero:', error: false %>
+            <%= f.input :age, label: 'Idade:', error: false %>
             <div class="mt-3 d-flex justify-content-center">
-            <%= f.button :submit,'Criar', class:"mb-4 bn60 mt-5" %>
+              <%= f.button :submit,'Criar', class:"bn60 mt-4" %>
+            </div>
           <% end %>
         </div>
       </div>
