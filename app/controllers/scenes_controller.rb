@@ -44,7 +44,6 @@ class ScenesController < ApplicationController
     @pc.front_end += @choice.front_end
     @pc.back_end += @choice.back_end
     @pc.stamina += @choice.stamina
-    @pc.luck += @choice.luck
     @pc.money += @choice.money
     @pc.save
   end

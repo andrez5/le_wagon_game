@@ -29,7 +29,7 @@ dia1_parte6 = Scene.create(title: "Dia 1 - Cena 6", story: "Após muita luta, vo
 # dia 2
 dia2_parte7 = Scene.create(title: "Dia 2 - Cena 1", story: "Após um primeiro dia, achando que já teria aprendido sobre código, você chega cedo e...", user: User.first, buddy: buddy, npc_name: "Dudu")
 dia2_parte8 = Scene.create(title: "Dia 2 - Cena 2", story: "O professor está explicando sobre Ruby e você...", user: User.first, buddy: buddy, npc_name: "Davis")
-dia2_parte9 = Scene.create(title: "Dia 2 - Cena 3", story: "Horário do almoço. Você decide:", user: User.first, buddy: buddy)
+dia2_parte9 = Scene.create(title: "Dia 2 - Cena 3", story: "Horário do almoço. Você decide:", user: User.first, buddy: buddy, npc_name: "Fernanda")
 dia2_parte10 = Scene.create(title: "Dia 2 - Cena 4", story: "Hora de aplicar seus conhecimentos na prática. Os exercícios estão bem difíceis hoje, você decide...", user: User.first, buddy: buddy, npc_name: "Alecio2")
 dia2_parte11 = Scene.create(title: "Dia 2 - Cena 5", story: "O professor quer fazer um exercício com o apoio da classe e você é o sorteado pra escrever o código na frente de todos.", user: User.first, buddy: buddy, npc_name: "Roberto")
 
@@ -46,7 +46,7 @@ dia4_parte18 = Scene.create(title: "Dia 4 - Cena 3", story: "Você não consegue
 dia4_parte19 = Scene.create(title: "Dia 4 - Cena 4", story: "Chegou a hora da aula de yoga!", user: User.first, buddy: buddy)
 
 # dia 5
-dia5_parte20 = Scene.create(title: "Dia 5 - Cena 1", story: "Bom dia! Seu colega comprou um bolo para dividir com a galera. Você já tomou café da manhã. Você…", user: User.first, buddy: buddy, npc_name: "Rodolfo3")
+dia5_parte20 = Scene.create(title: "Dia 5 - Cena 1", story: "Bom dia! Seu colega comprou um bolo para dividir com a galera. Você já tomou café da manhã. Você…", user: User.first, buddy: buddy, npc_name: "Rodolfo")
 dia5_parte21 = Scene.create(title: "Dia 5 - Cena 2", story: "O tão aguardado Front-End chegou e você percebe que…", user: User.first, buddy: buddy, npc_name: "Laurinha")
 dia5_parte22 = Scene.create(title: "Dia 5 - Cena 3", story: "A marmita da semana acabou e você precisa sair pra almoçar. A galera decide ir em um restaurante, mas você precisa economizar.", user: User.first, buddy: buddy, npc_name: "Fernanda")
 dia5_parte23 = Scene.create(title: "Dia 5 - Cena 4", story: "O dia chega ao fim e todos estão ouriçados para saber o que rola nesse Happy Hour. Você decide…", user: User.first, buddy: buddy)
