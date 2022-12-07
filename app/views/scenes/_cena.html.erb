@@ -22,9 +22,14 @@
           <% @scene.choices.each do |choice| %>
             <%= link_to choice.action, scene_path(id: choice.next_scene_id, choice: choice.id),class: "text-decoration-none d-flex justify-content-center", data: {select_choice_target: "choice"}%>
           <% end %>
+        <%# <%=  %>
         <%= link_to "Jogue novamente", root_path, data: {select_choice_target: "choice"}, class: "text-decoration-none d-flex justify-content-center"  if @scene.id == 31 %>
         </div>
       </div>
     </div>
   </div>
 <% end %>
+
+<%#
+# escolhas parte 31
+# Choice.create(scene: dia7_final, action: "#{@pc.money + @pc.front_end + @pc.back_end + @pc.stamina}" ) %>
