@@ -7,3 +7,4 @@ class Pc < ApplicationRecord
   GENDERS = ["Homem", "Mulher", "Outros"]
   # validates :pc_name, presence: { error_message: "Email can't be blank" }
 end
+

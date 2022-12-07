@@ -6,7 +6,7 @@
 .form-solway-input {
   font-family: 'Solway', serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .bg-new-pc {
@@ -15,6 +15,8 @@
   display: flex;
   align-items: center;
   color: #fff;
+  position: absolute;
+  z-index: 9000;
 
   .form-label {
     width: 35%;
