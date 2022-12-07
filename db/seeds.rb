@@ -13,6 +13,9 @@ User.destroy_all
 # user
 User.create(email: "teste@teste.com", password: "123123", nickname: "teste")
 
+# create Buddy
+buddy = Buddy.create(name: "Felipe", charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10)
+
 ############### CENAS #####################
 
 # dia 1
