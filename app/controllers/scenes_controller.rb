@@ -10,6 +10,7 @@ class ScenesController < ApplicationController
 
   def show
     calculate_atributes unless params[:id] == '1'
+    reset_attributes if params[:id] == '1'
     @scene = Scene.find(params[:id])
     respond_to do |format|
       if turbo_frame_request? && turbo_frame_request_id == 'cena'
@@ -44,8 +45,17 @@ class ScenesController < ApplicationController
     @pc.front_end += @choice.front_end
     @pc.back_end += @choice.back_end
     @pc.stamina += @choice.stamina
-    @pc.luck += @choice.luck
     @pc.money += @choice.money
+    @pc.save
+  end
+
+  def reset_attributes
+    @pc = current_user.pc
+    @pc.charisma = rand(0..5)
+    @pc.money = rand(0..10)
+    @pc.front_end = rand(0..5)
+    @pc.back_end = rand(0..5)
+    @pc.stamina = rand(0..5)
     @pc.save
   end
 end

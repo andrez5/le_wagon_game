@@ -14,7 +14,7 @@ User.destroy_all
 User.create(email: "teste@teste.com", password: "123123", nickname: "teste")
 
 # create Buddy
-buddy = Buddy.create(name: "Felipe", charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10)
+buddy = Buddy.create(name: "Felipe", charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10)
 
 ############### CENAS #####################
 
@@ -61,7 +61,7 @@ dia6_parte27 = Scene.create(title: "Dia 6 - Cena 4", story: "O Brasil ganhou e t
 dia7_parte28 = Scene.create(title: "Dia 7 - Cena 1", story: "O Demo Day chegou e ainda faltam alguns detalhes de Front para ajustar.", user: User.first, buddy: buddy)
 dia7_parte29 = Scene.create(title: "Dia 7 - Cena 2", story: "Chegou a hora de apresentar o seu lindo projeto e ninguém quer participar.", user: User.first, buddy: buddy)
 dia7_parte30 = Scene.create(title: "Dia 7 - Cena 3", story: "Ao final das apresentações todos se despedem e prometem manter contato.", user: User.first, buddy: buddy)
-dia7_final = Scene.create(title: "Dia 7 - Cena 4", story: "Parabéns! Você chegou ao final do Bootcamp e se tornou um programador.", user: User.first, buddy: buddy)
+Scene.create(title: "Dia 7 - Cena 4", story: "Parabéns! Você chegou ao final do Bootcamp e se tornou um programador. Sua pontuação é: ", user: User.first, buddy: buddy)
 
 
 ############### ESCOLHAS #####################

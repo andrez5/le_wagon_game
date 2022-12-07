@@ -28,11 +28,6 @@ class PcsController < ApplicationController
     @pc = Pc.new(pc_params)
     @pc.user = current_user
     @pc.scene = Scene.first
-    @pc.charisma = rand(0..5)
-    @pc.money = rand(0..10)
-    @pc.front_end = rand(0..5)
-    @pc.back_end = rand(0..5)
-    @pc.stamina = rand(0..5)
     if @pc.save
       redirect_to root_path, notice: "pc was successfully created!"
     else
