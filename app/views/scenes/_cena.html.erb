@@ -4,26 +4,26 @@
 
 
   <div class="classroom" style="background-image: url(<% if @scene.title == "Dia 5 - Cena 4" %>
-  <%= image_path("happy-hour.jpg") %>)">
+  <%= image_path("happy-hour.webp") %>)">
   <% elsif @scene.title == "Dia 4 - Cena 4" %>
-  <%= image_path("yoga.jpg") %>)">
+  <%= image_path("yoga.webp") %>)">
   <% elsif @scene.title == "Dia 6 - Cena 1" %>
-  <%= image_path("project.jpg") %>)">
+  <%= image_path("project.webp") %>)">
   <% elsif @scene.title == "Dia 3 - Cena 3" %>
-  <%= image_path("lunch.jpg") %>)">
+  <%= image_path("lunch.webp") %>)">
   <% elsif @scene.title == "Dia 4 - Cena 1" || @scene.title == "Dia 4 - Cena 3" %>
-  <%= image_path("bedroom.jpg") %>)">
+  <%= image_path("bedroom.webp") %>)">
   <% elsif @scene.title == "Dia 7 - Cena 4" %>
-  <%= image_path("final-scene-background.jpg") %>)">
+  <%= image_path("final-scene-background.webp") %>)">
   <% else %>
-  <%= image_path("scene_background.png") %>)">
+  <%= image_path("scene_background.webp") %>)">
   <% end %>
     <div class="container d-flex flex-column justify-content-end align-items-start" >
     <div class="d-flex w-100">
 
 <% if @scene.npc_name.nil? %>
 <% else %>
-  <%= image_tag("#{@scene.npc_name}.png", class:"npcs")%>
+  <%= image_tag("#{@scene.npc_name}.webp", class:"npcs")%>
 <% end %>
     </div>
       <h3 class="solway strokeme"><%=@scene.title%></h3>
