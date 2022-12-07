@@ -6,7 +6,7 @@
       <h1 class= "pt-3">Le Wagon Games</h1>
       <p class="texto-secundario">O jogo mais ousado de todos os tempos!</p>
       <% if current_user.nil? %>
-      <a  href="/pcs/new"><button class=" glow-on-hover btn-left"><strong>COMEÇAR JOGO</strong> </button></a>
+      <a  href="/users/sign_in"><button class=" glow-on-hover btn-left"><strong>COMEÇAR JOGO</strong> </button></a>
       <% elsif current_user.pc.nil? %>
       <a  href="/pcs/new"><button class=" glow-on-hover btn-left"><strong>COMEÇAR JOGO</strong> </button></a>
       <% else %>

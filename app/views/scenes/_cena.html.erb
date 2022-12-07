@@ -1,6 +1,8 @@
 <%= turbo_frame_tag "cena" do%>
   <%= render "shared/navbar" %>
 
+
+
   <div class="classroom" style="background-image: url(<% if @scene.title == "Dia 5 - Cena 4" %>
   <%= image_path("happy-hour.jpg") %>)">
   <% elsif @scene.title == "Dia 4 - Cena 4" %>
@@ -15,6 +17,13 @@
   <%= image_path("scene_background.png") %>)">
   <% end %>
     <div class="container d-flex flex-column justify-content-end align-items-start" >
+    <div class="d-flex w-100">
+
+<% if @scene.npc_name.nil? %>
+<% else %>
+  <%= image_tag("#{@scene.npc_name}.png", class:"npcs")%>
+<% end %>
+    </div>
       <h3 class="solway strokeme"><%=@scene.title%></h3>
       <div class="story-box w-100 border border-dark" data-controller="select-choice">
       <div data-controller="typed" data-typed-story-value="<%=@scene.story%>" data-action="keyup@window->select-choice#choose" ></div>
