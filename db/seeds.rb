@@ -199,12 +199,12 @@ Choice.create(scene: dia7_parte28, next_scene_id: 29, action: "Pede um ticket ao
 Choice.create(scene: dia7_parte28, next_scene_id: 29, action: "Já está muito em cima da hora. Deixa como está seja o que Deus quiser", charisma: 0, money: 0, front_end: -4, back_end: 0, stamina: 0, luck: 0)
 
 # escolhas parte 29
-Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Você faz sozinho como um bom otário", charisma: 2, money: 0, front_end: 3, back_end: 3, stamina: 0, luck: 0)
-Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Tira no sorteio quem vai ser o 'felizardo'", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Você faz sozinho como um bom otário", charisma: 2, money: 0, front_end: 3, back_end: 3, stamina: 0git, luck: 0)
+Choice.create(scene: dia7_parte29, next_scene_id: 30, action: "Tira no sorteio quem vai ser o 'felizardo'", charisma: 0, money: 0, front_end: 0, back_end: 0, stamina: 0git, luck: 0)
 
 # escolhas parte 30
-Choice.create(scene: dia7_parte30, next_scene_id: 31, action: "Você se emociona com o fim e já marca com um grupo para continuar codando", charisma: 2, money: 0, front_end: 4, back_end: 4, stamina: 0, luck: 0)
-Choice.create(scene: dia7_parte30, next_scene_id: 31, action: "Você sabe que na real não vai ser assim, mas concorda e internamente declina", charisma: 2, money: 0, front_end: 0, back_end: 0, stamina: 0, luck: 0)
+Choice.create(scene: dia7_parte30, next_scene_id: 31, action: "Você se emociona com o fim e já marca com um grupo para continuar codando", charisma: 2, money: 0, front_end: 4, back_end: 4, stamina: 0git, luck: 0)
+Choice.create(scene: dia7_parte30, next_scene_id: 31, action: "Você sabe que na real não vai ser assim, mas concorda e internamente declina", charisma: 2, money: 0, front_end: 0, back_end: 0, stamina: 0git, luck: 0)
 
 # create pcs
 Pc.create(pc_name: "Geronimo", gender: "neutro", age: 25, charisma: 10, money: 100, front_end: 10, back_end: 10, stamina: 10, luck: 10, scene: Scene.first, user: User.first)
