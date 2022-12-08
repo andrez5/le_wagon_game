@@ -14,7 +14,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: rgb(21, 21, 21);
   position: absolute;
   z-index: 9000;
 
@@ -32,4 +32,8 @@
   font-size: 24px;
   margin-top: 20px;
   margin-left: 25%;
+}
+
+.form-text {
+  color: rgb(97, 15, 15);
 }
