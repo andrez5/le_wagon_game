@@ -13,5 +13,5 @@ export default class extends Controller {
       showCursor: false,
     });
   }
-
+  
 }
